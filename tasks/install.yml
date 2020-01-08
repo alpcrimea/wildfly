@@ -37,9 +37,9 @@
     mode: '{{ wildfly_dir_mode }}'
     copy: no
     creates: "{{ wildfly_dir }}/bin/standalone.sh"
-    extra_opts:
-    - --one-top-level="{{wildfly_dir}}"
-    - --strip-components 1
+    extra_opts: 
+      - --one-top-level={{wildfly_name}}{{wildfly_suffix}}
+      - --strip-components=1
 
 - name: Create symlink to installed version
   file:
