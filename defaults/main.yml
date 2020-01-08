@@ -1,6 +1,7 @@
 ---
 # defaults file for wildfly
 
+wildfly_suffix: ""
 wildfly_manage_java_pkg: true
 wildfly_manage_firewall: true
 wildfly_manage_standalone_data: true

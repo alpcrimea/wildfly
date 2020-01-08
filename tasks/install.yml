@@ -42,5 +42,5 @@
   file:
     state: link
     src: "{{ wildfly_dir }}"
-    dest: "{{ wildfly_install_dir }}/wildfly"
+    dest: "{{ wildfly_install_dir }}/wildfly{{wildfly_suffix}}"
   when: wildfly_create_symlink
